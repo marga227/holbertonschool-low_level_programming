@@ -22,7 +22,7 @@ else if ($n == 0)
 {
 	printf("is zero\n");
 }
-else if ($n < 0)
+else ($n < 0)
 {
 printf("is negative\n");
 }
