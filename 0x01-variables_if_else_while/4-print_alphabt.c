@@ -1,22 +1,24 @@
+
 #include <stdio.h>
+/* Produced by Aura Margarita Zambrano */
 
-
-
-
-
-int main (void)
+/* betty style doc for function main goes there */
+/**
+ *main -Program that prints the alphabet in lowercase except q and e.
+ *
+ *Return: Alwais 0 (Sucess)
+ */
+int main(void)
 {
-char ch;
+	char ch;
 for (ch = 'a'; ch <= 'z' ; ch++)
 {
 if (ch != 'q' && ch != 'e')
 {
 	putchar (ch);
 }
-} 
-        putchar ('\n');
+}
+putchar ('\n');
 
 	return (0);
-
-
 }
