@@ -1,9 +1,7 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/* C program to print all alphabets from a to z */
 /**
- *main -Entry point
+ *main -Prints the alphabet.
  *
  *Return: Alwais 0 (Sucess)
  */
@@ -14,5 +12,7 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 	putchar (ch);
 }
+	putchar ('\n');
 return (0);
+
 }
