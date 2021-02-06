@@ -1,30 +1,32 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* made by Aura Margarita Zambrano */
 /**
- *main - Program to print the last digit of a number.
+ main- gets random number, and gets last digit of it
  *
- *Return: Alwais 0 (Sucess)
+ *Description - uses rand for random number, and divides abs value to get last
+ *
+ *Return: return 0
  */
 int main(void)
 {
 	int n;
-	int last_digit;
+	int last;
 
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_digit = n % 10;
-if (last_digit > 5)
-	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
-	}
-else if (last_digit < 6 && last_digit != 0)
+	last = n % 10;
+
+if (last > 5)
+	printf("Last digit of %d is %d and is greater than 5\n", n, last);
+else if (last < 6 && last != 0)
+{
 	printf("Last digit of %d is ", n);
-	printf("%d and  is less than 6 and not 0\n", last_digit);
+	printf("%d and  is less than 6 and not 0\n", last);
+}
 else
-	printf("Last digit of %d is %d and is 0\n", n, last_digit);
+	printf("Last digit of %d is %d and is 0\n", n, last);
 
 return (0);
 }
