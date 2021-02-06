@@ -8,17 +8,17 @@
  */
 int main(void)
 {
-	int ch;
-for (ch = 0 ; ch < 100 ; ch++)
-{	putchar ((ch / 10) + '0');
-	putchar ((ch % 10) + '0');
+	int i;
+for (i = 0 ; i < 100 ; i++)
+{	putchar ((i / 10) + '0');
+	putchar ((i % 10) + '0');
 
-if (ch  >= 0 && ch <= 99)
+if (i  >= 0 && i <= 98)
 {
 	putchar (',');
 	putchar (' ');
 }
-	if (ch == 99)
+	if (i == 99)
 		putchar ('\n');
 }
 	return (0);
