@@ -1,28 +1,26 @@
-
 #include <stdio.h>
 /* Produced by Aura Margarita Zambrano */
 
 /**
- *main -Program that prints all possible combinations of numbers.
+ *main -Program that prints all numbers to 00 - 99.
  *
  *Return: Alwais 0 (Sucess)
  */
 int main(void)
 {
+	int ch;
+for (ch = 0 ; ch < 100 ; ch++)
+{	putchar ((ch / 10) + '0');
+	putchar ((ch % 10) + '0');
 
-	int a;
-	int b;
-for (a = 48 ; a <= 57 ; a++)
-
-for (b = 48 ; b <=57 ; b++)
+if (ch  >= 0 && ch <= 99)
 {
-        if
-putchar (a);
-	putchar (b);
-
-
+	putchar (',');
+	putchar (' ');
 }
-putchar ('\n')
+	if (ch == 99)
+		putchar ('\n');
+}
 	return (0);
 }
 
