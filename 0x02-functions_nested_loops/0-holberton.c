@@ -7,10 +7,10 @@
 int main(void)
 {
 
-char name[] = "Holberton\n";
+char name[] = "Holberton";
 int a;
 
-for (a = 0; a <= 10; a++)
+for (a = 0; a < 9; a++)
 
 {
 	_putchar(name[a]);
