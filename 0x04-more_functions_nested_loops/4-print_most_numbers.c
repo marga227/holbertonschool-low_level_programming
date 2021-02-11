@@ -15,6 +15,6 @@ if (a != 50 && a != 52)
 }
 	_putchar ('\n');
 
-	return;
+
 }
 
