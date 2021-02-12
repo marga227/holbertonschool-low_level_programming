@@ -6,17 +6,14 @@
   */
 void print_triangle(int size)
 {
-  int a;
-  int b;
-  int c;
-
+int a;
+int b;
+int c;
 
 	if (size <= 0)
 	{
 	_putchar('\n');
 	}
-
-
 
 		for (a = 0; a <= size - 1; a++) /**cant de espa**/
 		{
