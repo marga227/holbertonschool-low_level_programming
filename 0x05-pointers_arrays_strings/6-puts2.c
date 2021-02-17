@@ -7,6 +7,7 @@
 void puts2(char *str)
 {
 	int  i;/*contador*/
+
 	i = 0;
 
 	while (*str)
